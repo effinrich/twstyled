@@ -1,0 +1,46 @@
+{
+  "name": "tw-styled-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtillman/twstyled.git"
+  },
+  "bugs": {
+    "url": "https://github.com/richtillman/twstyled/issues"
+  },
+  "homepage": "https://github.com/richtillman/twstyled#readme",
+  "keywords": [
+    "tailwind",
+    "react",
+    "vite",
+    "monorepo",
+    "tw-styled"
+  ],
+  "scripts": {
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "build:all": "turbo run build",
+    "test:all": "turbo run test",
+    "lint:all": "turbo run lint",
+    "typecheck:all": "turbo run typecheck",
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.59.4"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.15.4"
+}

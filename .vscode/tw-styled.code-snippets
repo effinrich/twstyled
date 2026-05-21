@@ -1,0 +1,91 @@
+{
+  "tw-styled import": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": "twstyled-import",
+    "body": ["import { styled } from 'tw-styled'"],
+    "description": "Import styled from tw-styled"
+  },
+  "tw-styled basic component": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "twstyled-basic",
+    "body": [
+      "const ${1:ComponentName} = styled.${2:div}`",
+      "  ${3:flex items-center gap-2}",
+      "`",
+      "",
+      "export function ${1:ComponentName}Demo() {",
+      "  return <${1:ComponentName}>${4:Content}</${1:ComponentName}>",
+      "}"
+    ],
+    "description": "Create a basic styled component"
+  },
+  "tw-styled variant component": {
+    "scope": "typescriptreact",
+    "prefix": "twstyled-variant",
+    "body": [
+      "import { styled, type Props } from 'tw-styled'",
+      "",
+      "type ${1:Variant} = '${2:default}' | '${3:outline}'",
+      "type ${4:ComponentProps} = Props<{ $variant?: ${1:Variant} }>",
+      "",
+      "const ${5:variantClasses}: Record<${1:Variant}, string> = {",
+      "  ${2:default}: '${6:bg-[--primary] text-[--primary-foreground]}',",
+      "  ${3:outline}: '${7:border border-[--border] bg-transparent}'",
+      "}",
+      "",
+      "export const ${8:Button} = styled.${9:button}<${4:ComponentProps}>`",
+      "  ${10:inline-flex items-center rounded-[--radius] px-4 py-2 text-sm font-medium}",
+      "  ${(p: ${4:ComponentProps}) => ${5:variantClasses}[p.$variant ?? '${2:default}']}",
+      "`"
+    ],
+    "description": "Create a typed transient-prop variant component"
+  },
+  "tw-styled wrapped component": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "twstyled-wrap",
+    "body": [
+      "const ${1:StyledComponent} = styled(${2:BaseComponent})`",
+      "  ${3:inline-flex items-center gap-2}",
+      "`"
+    ],
+    "description": "Wrap an existing component with styled(Component)"
+  },
+  "tw-styled ui card example": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "twstyled-ui-card",
+    "body": [
+      "import { Badge, Button, Card, CardContent, CardHeader, CardTitle, Input } from 'tw-styled-ui'",
+      "",
+      "export function ${1:ExampleCard}() {",
+      "  return (",
+      "    <Card className=\"max-w-sm\">",
+      "      <CardHeader>",
+      "        <CardTitle>${2:Card title}</CardTitle>",
+      "      </CardHeader>",
+      "      <CardContent className=\"space-y-3\">",
+      "        <Input placeholder=\"${3:Search...}\" />",
+      "        <div className=\"flex items-center gap-2\">",
+      "          <Button $variant=\"default\">${4:Save}</Button>",
+      "          <Button $variant=\"outline\" $size=\"sm\">${5:Cancel}</Button>",
+      "          <Badge $variant=\"secondary\">${6:New}</Badge>",
+      "        </div>",
+      "      </CardContent>",
+      "    </Card>",
+      "  )",
+      "}"
+    ],
+    "description": "Insert a tw-styled-ui component composition example"
+  },
+  "tw-styled shadcn token pattern": {
+    "scope": "typescriptreact,javascriptreact",
+    "prefix": "twstyled-shadcn-token",
+    "body": [
+      "const ${1:ThemedSurface} = styled.${2:div}`",
+      "  rounded-[--radius] border border-[--border]",
+      "  bg-[--background] text-[--foreground]",
+      "  ${3:p-4}",
+      "`"
+    ],
+    "description": "Create a component using shadcn-style CSS variable token classes"
+  }
+}

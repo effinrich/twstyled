@@ -1,0 +1,60 @@
+{
+  "name": "tw-styled-vite-plugin",
+  "version": "0.0.1",
+  "description": "Vite plugin for tw-styled build-time Tailwind CSS extraction.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtillman/twstyled.git",
+    "directory": "packages/vite-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/richtillman/twstyled/issues"
+  },
+  "homepage": "https://github.com/richtillman/twstyled#readme",
+  "keywords": [
+    "vite",
+    "tailwind",
+    "plugin",
+    "css-extraction",
+    "tw-styled"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "vite": "^5"
+  },
+  "dependencies": {
+    "tw-styled": "workspace:*",
+    "oxc-parser": "^0.46.0",
+    "magic-string": "^0.30.17"
+  },
+  "devDependencies": {
+    "fast-check": "^3.23.2",
+    "tsup": "^8.3.6",
+    "vite": "^6.1.0",
+    "vitest": "^3.0.5"
+  }
+}

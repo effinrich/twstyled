@@ -1,0 +1,63 @@
+{
+  "name": "tw-styled",
+  "version": "0.0.1",
+  "description": "Styled-components ergonomics for Tailwind CSS with zero runtime CSS injection.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtillman/twstyled.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/richtillman/twstyled/issues"
+  },
+  "homepage": "https://github.com/richtillman/twstyled#readme",
+  "keywords": [
+    "tailwind",
+    "react",
+    "styled-components",
+    "css-in-js",
+    "tw-styled"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "dependencies": {
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "fast-check": "^3.23.2",
+    "jsdom": "^26.0.0",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.3.6",
+    "vitest": "^3.0.5"
+  }
+}

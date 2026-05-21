@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1778545200651,
+  "projectRoot": "/Users/richtillman/Documents/GitHub/twstyled",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=18",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pnpm",
+    "runtime": "Node.js 18"
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "pnpm dev",
+    "scripts": {
+      "build:all": "turbo run build",
+      "test:all": "turbo run test",
+      "lint:all": "turbo run lint",
+      "typecheck:all": "turbo run typecheck",
+      "dev": "turbo run dev --parallel"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1778545200551,
+      "keyFiles": []
+    },
+    "playground": {
+      "path": "playground",
+      "purpose": null,
+      "fileCount": 5,
+      "lastAccessed": 1778545200556,
+      "keyFiles": [
+        "index.html",
+        "package.json",
+        "tsconfig.json",
+        "vite.config.ts",
+        "vitest.config.ts"
+      ]
+    },
+    "playground/dist": {
+      "path": "playground/dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1778545200615,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "playground/node_modules": {
+      "path": "playground/node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 0,
+      "lastAccessed": 1778545200622,
+      "keyFiles": []
+    },
+    "playground/src": {
+      "path": "playground/src",
+      "purpose": "Source code",
+      "fileCount": 3,
+      "lastAccessed": 1778545200626,
+      "keyFiles": [
+        "App.tsx",
+        "index.css",
+        "main.tsx"
+      ]
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

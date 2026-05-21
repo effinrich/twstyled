@@ -1,0 +1,64 @@
+{
+  "name": "tw-styled-cli",
+  "version": "0.0.1",
+  "description": "CLI migration tools for adopting tw-styled in existing codebases.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richtillman/twstyled.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/richtillman/twstyled/issues"
+  },
+  "homepage": "https://github.com/richtillman/twstyled#readme",
+  "keywords": [
+    "cli",
+    "codemod",
+    "tailwind",
+    "migration",
+    "tw-styled"
+  ],
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "bin": {
+    "tw-styled-cli": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/cli.d.ts",
+      "import": "./dist/cli.js",
+      "require": "./dist/cli.cjs"
+    }
+  },
+  "main": "./dist/cli.cjs",
+  "module": "./dist/cli.js",
+  "types": "./dist/cli.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.26.5",
+    "@babel/traverse": "^7.26.5",
+    "@babel/generator": "^7.26.5",
+    "@babel/types": "^7.26.5",
+    "fast-glob": "^3.3.3",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.6",
+    "@types/babel__generator": "^7.6.8",
+    "fast-check": "^3.23.2",
+    "tsup": "^8.3.6",
+    "vitest": "^3.0.5",
+    "@types/node": "^22.0.0"
+  }
+}
