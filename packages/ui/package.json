@@ -1,6 +1,6 @@
 {
   "name": "tw-styled-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pre-built tw-styled UI components compatible with shadcn token patterns.",
   "license": "MIT",
   "repository": {
