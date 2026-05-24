@@ -1,5 +1,16 @@
 # tw-styled-vite-plugin
 
+## 0.1.0
+
+### Minor Changes
+
+- 38f72b6: version bump
+
+### Patch Changes
+
+- Updated dependencies [38f72b6]
+  - tw-styled@0.1.0
+
 ## 0.0.2
 
 ### Patch Changes
