@@ -1,5 +1,11 @@
 # tw-styled-cli
 
+## 0.1.0
+
+### Minor Changes
+
+- 38f72b6: version bump
+
 ## 0.0.2
 
 ### Patch Changes
