@@ -1,6 +1,6 @@
 {
   "name": "tw-styled-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI migration tools for adopting tw-styled in existing codebases.",
   "license": "MIT",
   "repository": {

@@ -1,6 +1,6 @@
 {
   "name": "tw-styled",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Styled-components ergonomics for Tailwind CSS with zero runtime CSS injection.",
   "license": "MIT",
   "repository": {
